@@ -1,0 +1,2065 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#fff5f8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="X DKV 2">
+    <title>Biodata Kelas X DKV 2 - SMKN 4 BATAM</title>
+    <!-- Google Fonts: Playfair Display (Coquette Serif) + Quicksand (Soft Rounded Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ==========================================================================
+           COQUETTE THUMB-FRIENDLY WEB APP STYLES (CLEAN FULL VIEWPORT)
+           ========================================================================== */
+        :root {
+            --bg-primary: #fff7fa;
+            --bg-secondary: #ffffff;
+            --bg-card: #ffffff;
+            --text-primary: #523a44;
+            --text-secondary: #8c6b78;
+            --accent: #e87a9f;
+            --accent-deep: #d45d85;
+            --accent-light: #ffeaf1;
+            --border-lace: #f7c5d6;
+            --shadow-soft: 0 8px 22px rgba(232, 122, 159, 0.14);
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-sans: 'Quicksand', sans-serif;
+            --radius-card: 22px;
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #1a131c;
+            --bg-secondary: #241b27;
+            --bg-card: #2c2130;
+            --text-primary: #fbeaf0;
+            --text-secondary: #c9a7b5;
+            --accent: #f28cb0;
+            --accent-deep: #ff6b9e;
+            --accent-light: #3b2838;
+            --border-lace: #54394c;
+            --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.35);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+
+        input, select, textarea {
+            user-select: auto;
+        }
+
+        /* VARIED SMOOTH POP-UP & ELASTIC BOUNCE ANIMATIONS */
+        @keyframes appLaunchPop {
+            0% { opacity: 0; transform: scale(0.93) translateY(18px); }
+            65% { opacity: 1; transform: scale(1.01) translateY(-3px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        @keyframes screenZoomPop {
+            0% { opacity: 0; transform: scale(0.93) translateY(14px); }
+            70% { opacity: 1; transform: scale(1.01) translateY(-2px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        @keyframes screenSlideUpPop {
+            0% { opacity: 0; transform: translateY(24px) scale(0.96); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        @keyframes screenFlipPop {
+            0% { opacity: 0; transform: perspective(700px) rotateX(8deg) scale(0.95); }
+            100% { opacity: 1; transform: perspective(700px) rotateX(0deg) scale(1); }
+        }
+
+        @keyframes bottomSheetPop {
+            0% { opacity: 0; transform: translateY(100%) scale(0.96); }
+            75% { opacity: 1; transform: translateY(-5px) scale(1.01); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        @keyframes ribbonFloat {
+            0%, 100% { transform: translateX(-50%) translateY(0) rotate(-3deg); }
+            50% { transform: translateX(-50%) translateY(-4px) rotate(3deg); }
+        }
+
+        html, body {
+            width: 100%;
+            height: 100vh;
+            height: 100dvh;
+            overflow: hidden;
+            font-family: var(--font-sans);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* CLEAN FULL-VIEWPORT APP CONTAINER (NO PHONE BEZEL / NO STATUS BAR) */
+        .app-shell {
+            width: 100%;
+            height: 100vh;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            background-color: var(--bg-primary);
+            background-image: radial-gradient(var(--border-lace) 1px, transparent 1px);
+            background-size: 22px 22px;
+            animation: appLaunchPop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        /* COQUETTE TOP APP HEADER */
+        .app-header {
+            flex-shrink: 0;
+            height: 60px;
+            background: var(--bg-secondary);
+            border-bottom: 2px dashed var(--border-lace);
+            padding: 0 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 50;
+            box-shadow: 0 4px 14px rgba(232, 122, 159, 0.08);
+        }
+
+        .header-inner {
+            width: 100%;
+            max-width: 680px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .app-brand {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent-deep);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .app-brand:active { transform: scale(0.92); }
+
+        .header-actions {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        /* UNIVERSAL POP-UP BUTTON INTERACTION */
+        .pop-btn {
+            transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s, background-color 0.2s;
+            cursor: pointer;
+        }
+
+        .pop-btn:hover {
+            transform: scale(1.04) translateY(-2px);
+            box-shadow: 0 8px 18px rgba(232, 122, 159, 0.25);
+        }
+
+        .pop-btn:active {
+            transform: scale(0.92) translateY(1px);
+        }
+
+        .pill-btn {
+            background: var(--accent-light);
+            border: 1.5px solid var(--border-lace);
+            color: var(--accent-deep);
+            padding: 8px 14px;
+            border-radius: 50px;
+            font-family: var(--font-sans);
+            font-weight: 700;
+            font-size: 0.8rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .pill-btn:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* VIEWS CONTAINER (NO OUTER PAGE SCROLL) */
+        .views-wrapper {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .view-screen {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            max-width: 680px;
+            display: none;
+            flex-direction: column;
+            padding: 16px 16px 20px;
+            overflow-y: auto;
+            scrollbar-width: none;
+        }
+
+        .view-screen::-webkit-scrollbar { display: none; }
+
+        .view-screen.active {
+            display: flex;
+            animation: screenZoomPop 0.42s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        #studentsView.active {
+            animation: screenSlideUpPop 0.42s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        #kasView.active {
+            animation: screenFlipPop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        /* COQUETTE TOP SUBNAV */
+        .top-subnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            flex-shrink: 0;
+        }
+
+        .btn-back-coquette {
+            background: var(--bg-secondary);
+            border: 1.5px solid var(--accent);
+            color: var(--accent-deep);
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-family: var(--font-sans);
+            font-weight: 700;
+            font-size: 0.82rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 4px 12px rgba(232, 122, 159, 0.14);
+        }
+
+        .btn-back-coquette:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* 1. HOME SCREEN (ONE-HANDED THUMB REACH) */
+        #homeView {
+            justify-content: space-between;
+            text-align: center;
+            padding-top: 22px;
+            padding-bottom: 16px;
+        }
+
+        .coquette-hero-card {
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-lace);
+            border-radius: 28px;
+            padding: 22px 18px;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+        }
+
+        .coquette-hero-card::before {
+            content: '🎀';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.7rem;
+            animation: ribbonFloat 3s ease-in-out infinite;
+        }
+
+        .ribbon-tag {
+            display: inline-block;
+            background: var(--accent-light);
+            color: var(--accent-deep);
+            border: 1px dashed var(--accent);
+            padding: 5px 14px;
+            border-radius: 50px;
+            font-size: 0.76rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .class-title-serif {
+            font-family: var(--font-serif);
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: var(--accent-deep);
+            line-height: 1.1;
+            margin-bottom: 6px;
+        }
+
+        .school-meta {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .slogan-quote {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 0.88rem;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+            padding: 10px 14px;
+            border-radius: 16px;
+            border: 1px solid var(--border-lace);
+        }
+
+        /* THUMB-FRIENDLY LOWER ACTION GRID */
+        .bottom-thumb-zone {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: auto;
+        }
+
+        .app-grid-menu {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .app-tile-btn {
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-lace);
+            border-radius: 24px;
+            padding: 16px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 7px;
+            box-shadow: var(--shadow-soft);
+            color: var(--text-primary);
+        }
+
+        .tile-icon-bubble {
+            width: 48px;
+            height: 48px;
+            border-radius: 18px;
+            background: var(--accent-light);
+            border: 1.5px dashed var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.35rem;
+            color: var(--accent-deep);
+        }
+
+        .app-tile-btn span {
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .app-tile-btn small {
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            margin-top: -3px;
+        }
+
+        .credits-pill {
+            background: var(--bg-secondary);
+            border: 1.5px dashed var(--border-lace);
+            border-radius: 50px;
+            padding: 9px 14px;
+            font-size: 0.76rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .credits-pill strong {
+            color: var(--accent-deep);
+        }
+
+        /* SECTION TITLE IN SUB-VIEWS */
+        .subview-heading {
+            font-family: var(--font-serif);
+            font-size: 1.45rem;
+            color: var(--accent-deep);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        /* STUDENTS GRID (SCROLLABLE AREA ABOVE THUMB CONTROLS) */
+        .students-scroll-area {
+            flex: 1;
+            overflow-y: auto;
+            scrollbar-width: none;
+            padding-bottom: 10px;
+        }
+
+        .students-scroll-area::-webkit-scrollbar { display: none; }
+
+        .students-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        @media (min-width: 540px) {
+            .students-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .student-card {
+            background: var(--bg-secondary);
+            border: 1.5px solid var(--border-lace);
+            border-radius: var(--radius-card);
+            padding: 14px 10px;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+            animation: screenZoomPop 0.38s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+        }
+
+        .student-card::after {
+            content: '🎀';
+            position: absolute;
+            top: 8px;
+            right: 10px;
+            font-size: 0.75rem;
+            opacity: 0.75;
+        }
+
+        .student-card.boy-card::after {
+            content: '🧸';
+        }
+
+        .avatar-frame {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 8px;
+            border-radius: 50%;
+            padding: 3px;
+            border: 2px dashed var(--accent);
+            background: var(--accent-light);
+            overflow: hidden;
+        }
+
+        .boy-card .avatar-frame {
+            border-color: #8ab4f8;
+            background: #eef5ff;
+        }
+
+        [data-theme="dark"] .boy-card .avatar-frame {
+            border-color: #7aa2f7;
+            background: #252c42;
+        }
+
+        .avatar-frame img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .student-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            color: var(--accent-deep);
+            margin-bottom: 2px;
+        }
+
+        .student-card p {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .hobby-badge {
+            display: inline-block;
+            margin-top: 6px;
+            background: var(--accent-light);
+            color: var(--accent-deep);
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 50px;
+        }
+
+        /* THUMB-ZONE SEARCH & FILTER AT BOTTOM OF STUDENTS VIEW */
+        .thumb-controls-dock {
+            flex-shrink: 0;
+            padding-top: 10px;
+            border-top: 1.5px dashed var(--border-lace);
+            background: var(--bg-primary);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .filter-chips {
+            display: flex;
+            gap: 6px;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .filter-chips::-webkit-scrollbar { display: none; }
+
+        .chip-btn {
+            background: var(--bg-secondary);
+            border: 1.5px solid var(--border-lace);
+            color: var(--text-secondary);
+            padding: 6px 13px;
+            border-radius: 50px;
+            font-family: var(--font-sans);
+            font-size: 0.76rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .chip-btn.active {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+        }
+
+        .search-bar-coquette {
+            position: relative;
+        }
+
+        .search-bar-coquette i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+
+        .search-bar-coquette input {
+            width: 100%;
+            padding: 11px 16px 11px 40px;
+            border-radius: 50px;
+            border: 1.5px solid var(--border-lace);
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            font-size: 0.86rem;
+            font-weight: 600;
+            outline: none;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .search-bar-coquette input:focus {
+            border-color: var(--accent);
+        }
+
+        .admin-mini-bar {
+            background: var(--accent-light);
+            border: 1.5px dashed var(--accent);
+            border-radius: 16px;
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .admin-card-tools {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            margin-top: 8px;
+        }
+
+        .tool-btn {
+            border: none;
+            border-radius: 10px;
+            padding: 5px 10px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .tool-edit { background: #6c9ce8; }
+        .tool-del { background: #e86c82; }
+
+        /* STRUCTURE & ABOUT CARDS */
+        .coquette-list-card {
+            background: var(--bg-secondary);
+            border: 1.5px solid var(--border-lace);
+            border-radius: var(--radius-card);
+            padding: 14px 16px;
+            margin-bottom: 10px;
+            box-shadow: var(--shadow-soft);
+            animation: screenZoomPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+        }
+
+        .coquette-list-card.featured {
+            background: var(--accent-light);
+            border: 2px dashed var(--accent);
+        }
+
+        .role-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--accent-deep);
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .person-name {
+            font-family: var(--font-serif);
+            font-size: 1.04rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 9px 0;
+            border-bottom: 1px dashed var(--border-lace);
+            font-size: 0.86rem;
+        }
+
+        .info-row:last-child { border-bottom: none; }
+
+        /* KAS CARDS */
+        .kas-card {
+            background: var(--bg-secondary);
+            border: 1.5px solid var(--border-lace);
+            border-radius: var(--radius-card);
+            padding: 15px;
+            margin-bottom: 12px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .kas-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            padding-bottom: 6px;
+            border-bottom: 1.5px dashed var(--border-lace);
+        }
+
+        .kas-month {
+            font-family: var(--font-serif);
+            font-size: 1.06rem;
+            font-weight: 700;
+            color: var(--accent-deep);
+        }
+
+        .saldo-pill {
+            padding: 4px 11px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .saldo-neg { background: #ffe4e8; color: #d6455d; }
+        .saldo-pos { background: #e3f9ed; color: #229954; }
+
+        /* THUMB-FRIENDLY BOTTOM NAVIGATION DOCK */
+        .bottom-dock {
+            flex-shrink: 0;
+            height: 70px;
+            background: var(--bg-secondary);
+            border-top: 2px dashed var(--border-lace);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px 8px env(safe-area-inset-bottom, 6px);
+            z-index: 60;
+            box-shadow: 0 -4px 16px rgba(232, 122, 159, 0.08);
+        }
+
+        .dock-inner {
+            width: 100%;
+            max-width: 680px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .dock-item {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            font-family: var(--font-sans);
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 8px 14px;
+            border-radius: 18px;
+        }
+
+        .dock-item i {
+            font-size: 1.2rem;
+        }
+
+        .dock-item.active {
+            color: var(--accent-deep);
+            background: var(--accent-light);
+        }
+
+        /* COQUETTE BOTTOM-SHEET MODAL (THUMB ACCESSIBLE) */
+        .modal-backdrop {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(45, 25, 35, 0.55);
+            backdrop-filter: blur(4px);
+            z-index: 200;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .bottom-sheet {
+            width: 100%;
+            max-width: 540px;
+            max-height: 88vh;
+            background: var(--bg-secondary);
+            border-top: 3px solid var(--accent);
+            border-radius: 30px 30px 0 0;
+            padding: 14px 20px 28px;
+            overflow-y: auto;
+            position: relative;
+            animation: bottomSheetPop 0.42s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        .sheet-handle {
+            width: 44px;
+            height: 5px;
+            background: var(--border-lace);
+            border-radius: 10px;
+            margin: 0 auto 12px;
+        }
+
+        .close-sheet-btn {
+            position: absolute;
+            top: 14px;
+            right: 18px;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: none;
+            background: var(--accent-light);
+            color: var(--accent-deep);
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .sheet-avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 3px dashed var(--accent);
+            padding: 3px;
+            object-fit: cover;
+            margin: 0 auto 10px;
+            display: block;
+            background: var(--accent-light);
+        }
+
+        .bio-detail-box {
+            background: var(--bg-primary);
+            border: 1.5px solid var(--border-lace);
+            border-radius: 20px;
+            padding: 12px 14px;
+            margin-top: 12px;
+        }
+
+        .bio-item {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 8px 0;
+            border-bottom: 1px dashed var(--border-lace);
+            font-size: 0.86rem;
+        }
+
+        .bio-item:last-child { border-bottom: none; }
+        .bio-item strong { color: var(--accent-deep); white-space: nowrap; }
+        .bio-item span { text-align: right; font-weight: 600; }
+
+        .motto-ribbon-box {
+            margin-top: 12px;
+            background: var(--accent-light);
+            border: 1.5px dashed var(--accent);
+            border-radius: 16px;
+            padding: 11px;
+            text-align: center;
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 0.88rem;
+            color: var(--accent-deep);
+        }
+
+        /* FORMS & CUSTOM TOAST */
+        .form-field { margin-bottom: 11px; }
+        .form-field label {
+            display: block;
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--accent-deep);
+            margin-bottom: 4px;
+        }
+        .form-field input, .form-field select, .form-field textarea {
+            width: 100%;
+            padding: 10px 13px;
+            border-radius: 14px;
+            border: 1.5px solid var(--border-lace);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            font-size: 0.86rem;
+            font-weight: 600;
+        }
+
+        .primary-coquette-btn {
+            width: 100%;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 50px;
+            font-family: var(--font-sans);
+            font-weight: 700;
+            font-size: 0.92rem;
+            margin-top: 6px;
+            box-shadow: 0 6px 16px rgba(232, 122, 159, 0.35);
+        }
+
+        .coquette-toast {
+            position: fixed;
+            top: 72px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-20px);
+            background: var(--accent-deep);
+            color: #fff;
+            padding: 9px 20px;
+            border-radius: 50px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            z-index: 500;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+            white-space: nowrap;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .coquette-toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-shell">
+        <!-- TOAST NOTIFICATION -->
+        <div id="coquetteToast" class="coquette-toast">🎀 Tersimpan!</div>
+
+        <!-- COQUETTE TOP HEADER (CLEAN - NO FAKE PHONE STATUS BAR) -->
+        <header class="app-header">
+            <div class="header-inner">
+                <div class="app-brand" onclick="switchView('homeView')">
+                    <span>🎀</span> X DKV 2
+                </div>
+                <div class="header-actions">
+                    <button id="themeToggle" class="pill-btn pop-btn" title="Ganti Tema">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <button id="adminBtn" class="pill-btn pop-btn">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Admin
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN APP SCREENS -->
+        <main class="views-wrapper">
+
+            <!-- 1. HOME SCREEN -->
+            <section id="homeView" class="view-screen active">
+                <div id="homeAdminBar" class="admin-mini-bar" style="display: none; margin-bottom: 14px;">
+                    <span class="activeAdminLabel"></span>
+                    <div style="display:flex; gap:6px;">
+                        <button onclick="openEditHomeModal()" class="tool-btn pop-btn" style="background:var(--accent-deep);">✏️ Edit Beranda</button>
+                        <button onclick="logoutAdmin()" class="tool-btn tool-del pop-btn">Keluar</button>
+                    </div>
+                </div>
+
+                <div class="coquette-hero-card">
+                    <span id="heroRibbonDisplay" class="ribbon-tag">🩰 Coquette Class Space • 2026 - 2027</span>
+                    <h1 id="heroTitleDisplay" class="class-title-serif">X DKV 2</h1>
+                    <p id="heroSubtitleDisplay" class="school-meta">SMKN 4 BATAM • Desain Komunikasi Visual</p>
+                    <p id="heroMottoDisplay" class="slogan-quote">“Kreatif Tanpa Batas, Bersatu Dalam Karya, Berprestasi Bersama!”</p>
+                </div>
+
+                <!-- ONE-HANDED THUMB ZONE MENU -->
+                <div class="bottom-thumb-zone">
+                    <div class="app-grid-menu">
+                        <button class="app-tile-btn pop-btn" onclick="switchView('studentsView')">
+                            <div class="tile-icon-bubble">🌷</div>
+                            <span>Anggota Kelas</span>
+                            <small id="homeStudentCountSub">36 Siswa DKV 2</small>
+                        </button>
+                        <button class="app-tile-btn pop-btn" onclick="switchView('structureView')">
+                            <div class="tile-icon-bubble">👑</div>
+                            <span>Struktur Kelas</span>
+                            <small>Wali & Pengurus</small>
+                        </button>
+                        <button class="app-tile-btn pop-btn" onclick="switchView('aboutView')">
+                            <div class="tile-icon-bubble">💌</div>
+                            <span>Tentang Kelas</span>
+                            <small>Profil & Info</small>
+                        </button>
+                        <button class="app-tile-btn pop-btn" onclick="switchView('kasView')">
+                            <div class="tile-icon-bubble">👛</div>
+                            <span>Laporan Kas</span>
+                            <small>Rekap Keuangan</small>
+                        </button>
+                    </div>
+
+                    <!-- CREDITS -->
+                    <div id="heroCreditsDisplay" class="credits-pill">
+                        🎀 Created with love by <strong>Livi, Kyara, Jeck, & Gracia</strong> 🎀
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. ANGGOTA KELAS VIEW -->
+            <section id="studentsView" class="view-screen">
+                <div class="top-subnav">
+                    <button class="btn-back-coquette pop-btn" onclick="switchView('homeView')">
+                        <i class="fa-solid fa-chevron-left"></i> Kembali
+                    </button>
+                    <span id="studentCountBadge" class="ribbon-tag" style="margin:0;">36 Siswa 🎀</span>
+                </div>
+
+                <h2 class="subview-heading">🌷 Anggota X DKV 2</h2>
+
+                <!-- ADMIN BAR -->
+                <div id="adminStatusBar" class="admin-mini-bar" style="display: none;">
+                    <span class="activeAdminLabel"></span>
+                    <div style="display:flex; gap:5px;">
+                        <button onclick="openAddStudentModal()" class="tool-btn pop-btn" style="background:var(--accent-deep);">+ Tambah Siswa</button>
+                        <button onclick="logoutAdmin()" class="tool-btn tool-del pop-btn">Keluar</button>
+                    </div>
+                </div>
+
+                <!-- SCROLLABLE STUDENT CARDS -->
+                <div class="students-scroll-area">
+                    <div class="students-grid" id="studentsGrid"></div>
+                </div>
+
+                <!-- THUMB-REACHABLE FILTER & SEARCH AT BOTTOM -->
+                <div class="thumb-controls-dock">
+                    <div class="filter-chips">
+                        <button class="chip-btn active pop-btn" onclick="setGenderFilter('ALL', this)">Semua</button>
+                        <button class="chip-btn pop-btn" onclick="setGenderFilter('Perempuan', this)">🎀 Perempuan</button>
+                        <button class="chip-btn pop-btn" onclick="setGenderFilter('Laki-laki', this)">🧸 Laki-laki</button>
+                        <button class="chip-btn pop-btn" onclick="setGenderFilter('GAMBAR', this)">🎨 Hobi Gambar</button>
+                    </div>
+                    <div class="search-bar-coquette">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="searchInput" placeholder="Cari nama, panggilan, hobi, cita-cita...">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. STRUKTUR KELAS VIEW -->
+            <section id="structureView" class="view-screen">
+                <div class="top-subnav">
+                    <button class="btn-back-coquette pop-btn" onclick="switchView('homeView')">
+                        <i class="fa-solid fa-chevron-left"></i> Kembali
+                    </button>
+                    <span class="ribbon-tag" style="margin:0;">Pengurus 👑</span>
+                </div>
+
+                <h2 class="subview-heading">👑 Struktur Organisasi</h2>
+
+                <div id="structureAdminBar" class="admin-mini-bar" style="display: none;">
+                    <span class="activeAdminLabel"></span>
+                    <div style="display:flex; gap:5px;">
+                        <button onclick="openAddStructureModal()" class="tool-btn pop-btn" style="background:var(--accent-deep);">+ Jabatan</button>
+                        <button onclick="logoutAdmin()" class="tool-btn tool-del pop-btn">Keluar</button>
+                    </div>
+                </div>
+
+                <div id="structureListContainer"></div>
+            </section>
+
+            <!-- 4. TENTANG KELAS VIEW -->
+            <section id="aboutView" class="view-screen">
+                <div class="top-subnav">
+                    <button class="btn-back-coquette pop-btn" onclick="switchView('homeView')">
+                        <i class="fa-solid fa-chevron-left"></i> Kembali
+                    </button>
+                    <span class="ribbon-tag" style="margin:0;">Info Kelas 💌</span>
+                </div>
+
+                <h2 class="subview-heading">💌 Tentang Kelas</h2>
+
+                <div id="aboutAdminBar" class="admin-mini-bar" style="display: none;">
+                    <span class="activeAdminLabel"></span>
+                    <div style="display:flex; gap:5px;">
+                        <button onclick="openAddAboutModal()" class="tool-btn pop-btn" style="background:var(--accent-deep);">+ Info</button>
+                        <button onclick="openEditAboutMetaModal()" class="tool-btn tool-edit pop-btn">✏️ Motto</button>
+                        <button onclick="logoutAdmin()" class="tool-btn tool-del pop-btn">Keluar</button>
+                    </div>
+                </div>
+
+                <div id="aboutListContainer" class="coquette-list-card"></div>
+
+                <div class="coquette-list-card featured" style="text-align:center;">
+                    <span class="role-label">🎀 Slogan & Motto Kelas</span>
+                    <p id="aboutMottoDisplay" style="font-family:var(--font-serif); font-style:italic; margin-top:6px; font-size:0.95rem;">
+                        “Kreatif Tanpa Batas, Bersatu Dalam Karya, Berprestasi Bersama!”
+                    </p>
+                </div>
+
+                <div class="coquette-list-card" style="text-align:center;">
+                    <span class="role-label">✨ Karakteristik Kelas</span>
+                    <p id="aboutCharDisplay" style="font-weight:700; color:var(--accent-deep); margin-top:4px; font-size:0.88rem;">
+                        Kreatif, Estetik, Kompak, & Penuh Semangat Berkarya
+                    </p>
+                </div>
+            </section>
+
+            <!-- 5. LAPORAN KAS VIEW -->
+            <section id="kasView" class="view-screen">
+                <div class="top-subnav">
+                    <button class="btn-back-coquette pop-btn" onclick="switchView('homeView')">
+                        <i class="fa-solid fa-chevron-left"></i> Kembali
+                    </button>
+                    <span class="ribbon-tag" style="margin:0;">Keuangan 👛</span>
+                </div>
+
+                <h2 class="subview-heading">👛 Laporan Uang Kas</h2>
+
+                <div id="kasAdminBar" class="admin-mini-bar" style="display: none;">
+                    <span class="activeAdminLabel"></span>
+                    <div style="display:flex; gap:5px;">
+                        <button onclick="openAddKasModal()" class="tool-btn pop-btn" style="background:var(--accent-deep);">+ Bulan Kas</button>
+                        <button onclick="logoutAdmin()" class="tool-btn tool-del pop-btn">Keluar</button>
+                    </div>
+                </div>
+
+                <div id="kasListContainer"></div>
+            </section>
+
+        </main>
+        <!-- BOTTOM-SHEET MODAL: ADMIN LOGIN & PANEL -->
+        <div id="adminLoginModal" class="modal-backdrop">
+            <div class="bottom-sheet">
+                <div class="sheet-handle"></div>
+                <button class="close-sheet-btn pop-btn" onclick="closeAllModals()">&times;</button>
+                <h2 style="font-family:var(--font-serif); color:var(--accent-deep); text-align:center;">🎀 Panel Admin Kelas</h2>
+                <p id="adminModalSubtitle" style="font-size:0.78rem; text-align:center; color:var(--text-secondary); margin:6px 0 14px;">
+                    Masukkan email admin dan kode akses untuk mengelola seluruh isi website.
+                </p>
+                <form id="adminLoginForm">
+                    <div class="form-field">
+                        <label>Email Admin</label>
+                        <input type="email" id="adminEmailInput" required placeholder="nama@email.com">
+                    </div>
+                    <div class="form-field">
+                        <label>Kode Sandi</label>
+                        <input type="password" id="adminPasswordInput" required placeholder="••••••">
+                    </div>
+                    <button type="submit" class="primary-coquette-btn pop-btn">Masuk Mode Admin ✨</button>
+                </form>
+
+                <div id="adminActiveControls" style="display:none; margin-top:10px; text-align:center;">
+                    <div style="background:var(--accent-light); border:1.5px dashed var(--accent); border-radius:16px; padding:12px; margin-bottom:12px;">
+                        <p style="font-size:0.82rem; font-weight:700; color:var(--accent-deep);">👑 Sedang Login Sebagai:</p>
+                        <p id="panelActiveEmail" style="font-size:0.9rem; font-weight:700; margin-top:2px;"></p>
+                    </div>
+                    <div style="display:flex; gap:8px;">
+                        <button type="button" onclick="resetAllDefaultData()" class="tool-btn pop-btn" style="flex:1; padding:10px; background:#8c6b78; border-radius:50px;">🔄 Reset Data Awal</button>
+                        <button type="button" onclick="logoutAdmin(); closeAllModals();" class="tool-btn tool-del pop-btn" style="flex:1; padding:10px; border-radius:50px;">🚪 Keluar Admin</button>
+                    </div>
+                </div>
+
+                <div id="savedAdminsList" style="margin-top:14px; font-size:0.74rem; color:var(--text-secondary); text-align:center;"></div>
+            </div>
+        </div>
+
+        <!-- BOTTOM-SHEET MODAL: EDIT BERANDA -->
+        <div id="editHomeModal" class="modal-backdrop">
+            <div class="bottom-sheet">
+                <div class="sheet-handle"></div>
+                <button class="close-sheet-btn pop-btn" onclick="closeAllModals()">&times;</button>
+                <h2 style="font-family:var(--font-serif); color:var(--accent-deep); text-align:center; margin-bottom:12px;">🎀 Edit Halaman Beranda</h2>
+                <form id="editHomeForm">
+                    <div class="form-field">
+                        <label>Teks Pita Atas (Badge)</label>
+                        <input type="text" id="homeRibbonInput" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Nama Kelas (Judul Besar)</label>
+                        <input type="text" id="homeTitleInput" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Sekolah & Jurusan</label>
+                        <input type="text" id="homeSubtitleInput" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Slogan / Motto Utama</label>
+                        <textarea id="homeMottoInput" rows="2" required></textarea>
+                    </div>
+                    <div class="form-field">
+                        <label>Teks Credit Pembuat</label>
+                        <input type="text" id="homeCreditsInput" required>
+                    </div>
+                    <button type="submit" class="primary-coquette-btn pop-btn">Simpan Beranda 🎀</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- BOTTOM-SHEET MODAL: EDIT / TAMBAH STRUKTUR -->
+        <div id="editStructureModal" class="modal-backdrop">
+            <div class="bottom-sheet">
+                <div class="sheet-handle"></div>
+                <button class="close-sheet-btn pop-btn" onclick="closeAllModals()">&times;</button>
+                <h2 id="structModalTitle" style="font-family:var(--font-serif); color:var(--accent-deep); text-align:center; margin-bottom:12px;">👑 Edit Struktur Kelas</h2>
+                <form id="editStructureForm">
+                    <input type="hidden" id="editStructId">
+                    <div class="form-field">
+                        <label>Jabatan / Peran (contoh: 🌸 Wali Kelas)</label>
+                        <input type="text" id="structRoleInput" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Nama Lengkap</label>
+                        <input type="text" id="structNameInput" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Tampilan Kartu</label>
+                        <select id="structFeaturedInput">
+                            <option value="true">Highlight Utama (Pink Lace)</option>
+                            <option value="false">Kartu Standar</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="primary-coquette-btn pop-btn">Simpan Struktur 👑</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- BOTTOM-SHEET MODAL: EDIT / TAMBAH INFO TENTANG KELAS -->
+        <div id="editAboutModal" class="modal-backdrop">
+            <div class="bottom-sheet">
+                <div class="sheet-handle"></div>
+                <button class="close-sheet-btn pop-btn" onclick="closeAllModals()">&times;</button>
+                <h2 id="aboutModalTitle" style="font-family:var(--font-serif); color:var(--accent-deep); text-align:center; margin-bottom:12px;">💌 Edit Info Kelas</h2>
+                <form id="editAboutForm">
+                    <input type="hidden" id="editAboutId">
+                    <div class="form-field">
+                        <label>Judul Informasi (contoh: Nama Kelas)</label>
+                        <input type="text" id="aboutLabelInput" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Isi Keterangan (contoh: X DKV 2)</label>
+                        <input type="text" id="aboutValueInput" required>
+                    </div>
+                    <button type="submit" class="primary-coquette-btn pop-btn">Simpan Info Kelas 💌</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- BOTTOM-SHEET MODAL: EDIT MOTTO & KARAKTERISTIK TENTANG -->
+        <div id="editAboutMetaModal" class="modal-backdrop">
+            <div class="bottom-sheet">
+                <div class="sheet-handle"></div>
+                <button class="close-sheet-btn pop-btn" onclick="closeAllModals()">&times;</button>
+                <h2 style="font-family:var(--font-serif); color:var(--accent-deep); text-align:center; margin-bottom:12px;">🎀 Edit Motto & Karakteristik</h2>
+                <form id="editAboutMetaForm">
+                    <div class="form-field">
+                        <label>Slogan / Motto Kelas</label>
+                        <textarea id="aboutMottoInput" rows="2" required></textarea>
+                    </div>
+                    <div class="form-field">
+                        <label>Karakteristik Kelas</label>
+                        <input type="text" id="aboutCharInput" required>
+                    </div>
+                    <button type="submit" class="primary-coquette-btn pop-btn">Simpan Perubahan 🎀</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- BOTTOM-SHEET MODAL: EDIT / TAMBAH LAPORAN KAS -->
+        <div id="editKasModal" class="modal-backdrop">
+            <div class="bottom-sheet">
+                <div class="sheet-handle"></div>
+                <button class="close-sheet-btn pop-btn" onclick="closeAllModals()">&times;</button>
+                <h2 id="kasModalTitle" style="font-family:var(--font-serif); color:var(--accent-deep); text-align:center; margin-bottom:12px;">👛 Edit Laporan Kas</h2>
+                <form id="editKasForm">
+                    <input type="hidden" id="editKasId">
+                    <div class="form-field">
+                        <label>Nama Bulan (contoh: 🗓️ Bulan Oktober)</label>
+                        <input type="text" id="kasMonthInput" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Label Pemasukan</label>
+                        <input type="text" id="kasIncomeLabelInput" value="Total Pemasukan" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Nominal Pemasukan</label>
+                        <input type="text" id="kasIncomeValInput" placeholder="Rp 500.000" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Nominal Pengeluaran</label>
+                        <input type="text" id="kasExpenseValInput" placeholder="Rp 200.000" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Keterangan Sisa / Saldo Akhir</label>
+                        <input type="text" id="kasBalanceTextInput" placeholder="Sisa Rp 300.000" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Status Warna Saldo</label>
+                        <select id="kasStatusInput">
+                            <option value="pos">Positif / Aman (Hijau)</option>
+                            <option value="neg">Minus / Defisit (Merah)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="primary-coquette-btn pop-btn">Simpan Laporan Kas 👛</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- BOTTOM-SHEET MODAL: EDIT / TAMBAH SISWA -->
+        <div id="editStudentModal" class="modal-backdrop">
+            <div class="bottom-sheet">
+                <div class="sheet-handle"></div>
+                <button class="close-sheet-btn pop-btn" onclick="closeAllModals()">&times;</button>
+                <h2 id="editModalTitle" style="font-family:var(--font-serif); color:var(--accent-deep); text-align:center; margin-bottom:12px;">Edit Biodata Siswa</h2>
+                <form id="editStudentForm">
+                    <input type="hidden" id="editStudentId">
+                    <div class="form-field">
+                        <label>Nama Lengkap</label>
+                        <input type="text" id="editNama" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Nama Panggilan</label>
+                        <input type="text" id="editPanggilan">
+                    </div>
+                    <div class="form-field">
+                        <label>Foto Profil (Tersimpan Permanen)</label>
+                        <input type="file" id="editFoto" accept="image/*">
+                    </div>
+                    <div class="form-field">
+                        <label>Jenis Kelamin</label>
+                        <select id="editGender">
+                            <option value="Perempuan">Perempuan</option>
+                            <option value="Laki-laki">Laki-laki</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label>Hobi</label>
+                        <input type="text" id="editHobi">
+                    </div>
+                    <div class="form-field">
+                        <label>Cita-cita</label>
+                        <input type="text" id="editCita">
+                    </div>
+                    <div class="form-field">
+                        <label>Hewan Kesukaan</label>
+                        <input type="text" id="editHewan">
+                    </div>
+                    <div class="form-field">
+                        <label>Makanan Favorit</label>
+                        <input type="text" id="editMakanan">
+                    </div>
+                    <div class="form-field">
+                        <label>Kata-kata / Motto Pribadi</label>
+                        <textarea id="editMotto" rows="2"></textarea>
+                    </div>
+                    <button type="submit" class="primary-coquette-btn pop-btn">Simpan Perubahan 🎀</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ==========================================================================
+        // DEFAULT DATA UNTUK SELURUH SECTION (BERANDA, SISWA, STRUKTUR, TENTANG, KAS)
+        // ==========================================================================
+        const defaultHomeData = {
+            ribbon: "🩰 Coquette Class Space • 2026 - 2027",
+            title: "X DKV 2",
+            subtitle: "SMKN 4 BATAM • Desain Komunikasi Visual",
+            motto: "“Kreatif Tanpa Batas, Bersatu Dalam Karya, Berprestasi Bersama!”",
+            credits: "Livi, Kyara, Jeck, & Gracia"
+        };
+
+        const defaultStructureData = [
+            { id: 1, role: "🌸 Wali Kelas", name: "RIZKA SEPTIALIS S.PD", featured: true },
+            { id: 2, role: "🎀 Ketua Kelas", name: "MAVI MARMARA", featured: true },
+            { id: 3, role: "✨ Wakil Ketua Kelas", name: "MUHAMMAD FARREL FERDIAN", featured: true },
+            { id: 4, role: "📝 Sekretaris 1", name: "SYASYA DIYANTI HUSODO", featured: false },
+            { id: 5, role: "📝 Sekretaris 2", name: "NABILA PUTRI RIZANA", featured: false },
+            { id: 6, role: "💰 Bendahara 1", name: "AVARA MOHANA S.A", featured: false },
+            { id: 7, role: "💰 Bendahara 2", name: "NABILA DWI FEBRIANA", featured: false },
+            { id: 8, role: "🛡️ Seksi Keamanan 1", name: "KYARA RAYSA H", featured: false },
+            { id: 9, role: "🛡️ Seksi Keamanan 2", name: "ANGELYN NATASYA TAMBUNAN", featured: false },
+            { id: 10, role: "🧹 Seksi Kebersihan 1", name: "JECK LISON", featured: false },
+            { id: 11, role: "🧹 Seksi Kebersihan 2", name: "REDNIA SIBURIAN", featured: false }
+        ];
+
+        const defaultAboutItems = [
+            { id: 1, label: "Nama Kelas", value: "X DKV 2" },
+            { id: 2, label: "Jurusan", value: "Desain Komunikasi Visual" },
+            { id: 3, label: "Nama Sekolah", value: "SMKN 4 BATAM" },
+            { id: 4, label: "Tahun Ajaran", value: "2026 - 2027" },
+            { id: 5, label: "Wali Kelas", value: "RIZKA SEPTIALIS S.PD" },
+            { id: 6, label: "Jumlah Siswa", value: "36 Siswa" }
+        ];
+
+        const defaultAboutMeta = {
+            motto: "“Kreatif Tanpa Batas, Bersatu Dalam Karya, Berprestasi Bersama!”",
+            characteristic: "Kreatif, Estetik, Kompak, & Penuh Semangat Berkarya"
+        };
+
+        const defaultKasData = [
+            { id: 1, month: "🗓️ Bulan Juli", incomeLabel: "Total Pemasukan", incomeVal: "Rp 56.439", expenseVal: "Rp 217.000", balanceText: "Minus Rp 160.561", status: "neg" },
+            { id: 2, month: "🗓️ Bulan Agustus", incomeLabel: "Total Pemasukan", incomeVal: "Rp 705.000", expenseVal: "Rp 335.000", balanceText: "Sisa Rp 360.000", status: "pos" },
+            { id: 3, month: "🗓️ Bulan September", incomeLabel: "Akumulasi Pembayaran", incomeVal: "Rp 660.000 (Kas Rp 630.000)", expenseVal: "Rp 197.700", balanceText: "Sisa Rp 432.300", status: "pos" }
+        ];
+
+        const defaultStudentsData = [
+            { id: 1, nama: "ADARA NURFIANSYAH", panggilan: "Adara", gender: "Perempuan", hobi: "Menggambar", cita: "Pengusaha", hewan: "Kucing", makanan: "Dendeng balado", motto: "Berkarya dengan hati dan penuh warna!", foto: "" },
+            { id: 2, nama: "ADITIYA ALFARIZ", panggilan: "Fhariz", gender: "Laki-laki", hobi: "Main game", cita: "Pengusaha", hewan: "Kucing", makanan: "Random", motto: "Tetap santai tapi pasti sukses.", foto: "" },
+            { id: 3, nama: "AISYAHTUL RAMADANIAH S", panggilan: "Syatul", gender: "Perempuan", hobi: "Make up", cita: "Pengusaha butik + MUA", hewan: "Tidak ada", makanan: "Dimsum mentai🤤", motto: "Be your own kind of beautiful.", foto: "" },
+            { id: 4, nama: "ANGELYN NATASYA TAMBUNAN", panggilan: "Angelyn", gender: "Perempuan", hobi: "Badminton dan menggambar", cita: "Wedding photographer / Tokutei Ginau", hewan: "Doberman atau German Shepherd", makanan: "Saksang B2", motto: "Abadikan setiap momen berharga.", foto: "" },
+            { id: 5, nama: "AVARA MOHANA SEPTEVI ANWA", panggilan: "Vara", gender: "Perempuan", hobi: "Volly", cita: "Welder", hewan: "Tidak ada", makanan: "Random", motto: "Berani beda dan pantang menyerah!", foto: "" },
+            { id: 6, nama: "ARTIKA SARI DEVI", panggilan: "Artika", gender: "Perempuan", hobi: "Berenang", cita: "Dokter", hewan: "Hamster sm kuda", makanan: "Chikuro", motto: "Terus melangkah menuju impian.", foto: "" },
+            { id: 8, nama: "CELLINE", panggilan: "Celline", gender: "Perempuan", hobi: "Menggambar", cita: "Dokter", hewan: "Kucing", makanan: "Udang goreng", motto: "Kreativitas adalah kunci masa depan.", foto: "" },
+            { id: 10, nama: "DIMAS FIRMANSYAH RAMADHA", panggilan: "Dimas", gender: "Laki-laki", hobi: "Volly", cita: "Pengusaha", hewan: "Kucing", makanan: "Random", motto: "Usaha keras tidak pernah mengkhianati hasil.", foto: "" },
+            { id: 11, nama: "FATAN RUZAIN", panggilan: "Fatan", gender: "Laki-laki", hobi: "Gambar", cita: "Business man", hewan: "Buaya", makanan: "Random", motto: "Think creative, act smart.", foto: "" },
+            { id: 12, nama: "FRANSISKUS ADVENTINUS", panggilan: "Frans", gender: "Laki-laki", hobi: "Random", cita: "Random", hewan: "Tidak ada", makanan: "Random", motto: "Jalani hari dengan penuh semangat.", foto: "" },
+            { id: 13, nama: "GRACIA LAURA ARDIAN", panggilan: "Gracia", gender: "Perempuan", hobi: "Menggambar", cita: "Illustrator animasi", hewan: "Kucing siam", makanan: "Mochi", motto: "Menghidupkan imajinasi lewat goresan warna.", foto: "" },
+            { id: 14, nama: "HENOKH VALENTINO PAREANG", panggilan: "Henokh", gender: "Laki-laki", hobi: "Random", cita: "Random", hewan: "Tidak ada", makanan: "Random", motto: "Tetap rendah hati dan terus belajar.", foto: "" },
+            { id: 15, nama: "HIRMA MALINI", panggilan: "Hirma", gender: "Perempuan", hobi: "Menulis", cita: "Pengusaha", hewan: "Tidak ada", makanan: "Dimsum mentai", motto: "Setiap kata punya cerita dan makna.", foto: "" },
+            { id: 16, nama: "JECK LISON", panggilan: "Jeck", gender: "Laki-laki", hobi: "Menggambar", cita: "Pengusaha", hewan: "Anjing", makanan: "Samyang", motto: "Kreatif tanpa batas di X DKV 2!", foto: "" },
+            { id: 17, nama: "LENNI AGUSTINA BR SIANTURI", panggilan: "Leni", gender: "Perempuan", hobi: "Make up", cita: "Salon owner", hewan: "Anjing", makanan: "Random", motto: "Percaya diri adalah pesona terbaik.", foto: "" },
+            { id: 18, nama: "LIVI ANGGELIA LIU", panggilan: "Livi", gender: "Perempuan", hobi: "Menggambar", cita: "Animator / Illustrator / Fotografi", hewan: "Hamster", makanan: "Nasi padang", motto: "Create cute things and spread kindness 🎀", foto: "" },
+            { id: 19, nama: "KYARA RAYSA HENGKENGBALA", panggilan: "Kyara", gender: "Perempuan", hobi: "Menggambar", cita: "Ilustrator", hewan: "Tidak ada", makanan: "Random", motto: "Seni adalah bahasa jiwa yang paling indah.", foto: "" },
+            { id: 20, nama: "KHAIRANI NABILA PUTERI", panggilan: "Khai", gender: "Perempuan", hobi: "Denger musik", cita: "Jadi orang sukses", hewan: "Corydoras", makanan: "Sourdough", motto: "Good music, good vibes, great future.", foto: "" },
+            { id: 21, nama: "MOHAMMAD AL RAJA BUDIMAN", panggilan: "Raja", gender: "Laki-laki", hobi: "Random", cita: "Random", hewan: "Tidak ada", makanan: "Random", motto: "Fokus pada tujuan dan terus maju.", foto: "" },
+            { id: 22, nama: "MEDIAN ARYA PANJI SETIAWAN", panggilan: "Median", gender: "Laki-laki", hobi: "Main Game", cita: "Aviation-Related", hewan: "Spotted Seals", makanan: "Random", motto: "Terbang tinggi meraih cita-cita.", foto: "" },
+            { id: 23, nama: "MARIO ARTHA PUTRA LUMBAN", panggilan: "Mario", gender: "Laki-laki", hobi: "Nonton film", cita: "Pengusaha", hewan: "Ayam", makanan: "Random", motto: "Setiap hari adalah kesempatan baru.", foto: "" },
+            { id: 24, nama: "MUHAMMAD RAFI NASUTION", panggilan: "Rafi", gender: "Laki-laki", hobi: "Basket", cita: "Jadi orang sukses", hewan: "Kucing", makanan: "Mie ayam", motto: "Kerja keras hari ini untuk kesuksesan esok.", foto: "" },
+            { id: 25, nama: "MUHAMMAD AZHAR FIRDAUS B", panggilan: "Azhar", gender: "Laki-laki", hobi: "Random", cita: "Random", hewan: "Tidak ada", makanan: "Mie ayam", motto: "Tetap tenang dan lakukan yang terbaik.", foto: "" },
+            { id: 26, nama: "MUHAMMAD FARREL FERDIAN", panggilan: "Farrel", gender: "Laki-laki", hobi: "Main game", cita: "Art director / Movie director / Cinematographer", hewan: "Wombat", makanan: "Ayam penyet", motto: "Direct your own life like a masterpiece.", foto: "" },
+            { id: 27, nama: "NABILA DWI FEBRIANA", panggilan: "Nabila Dwi", gender: "Perempuan", hobi: "Apa aja lh", cita: "Pengusaha", hewan: "Kucing", makanan: "Random", motto: "Nikmati prosesnya dan syukuri hasilnya.", foto: "" },
+            { id: 28, nama: "NABILA PUTRI RIZANA", panggilan: "Nabila Putri", gender: "Perempuan", hobi: "Berenang", cita: "Pengusaha", hewan: "Butterfly", makanan: "Dubai chewy cookie", motto: "Terus bertumbuh indah seperti kupu-kupu.", foto: "" },
+            { id: 29, nama: "RAFIDA RAMTIA JOHOR", panggilan: "Rafida", gender: "Perempuan", hobi: "Masak", cita: "Apa ajalah, yang halal pokoknya", hewan: "Kapibara", makanan: "Roti canai", motto: "Tetap santai seperti kapibara.", foto: "" },
+            { id: 30, nama: "REDNIA SIBURIAN", panggilan: "Nia", gender: "Perempuan", hobi: "Denger musik", cita: "Hakim", hewan: "Panda", makanan: "Seafood", motto: "Keadilan dan kebenaran di atas segalanya.", foto: "" },
+            { id: 31, nama: "SEVIRA SUDRAJAT", panggilan: "Sevira", gender: "Perempuan", hobi: "Masak", cita: "Siap lulus kerja di jepang", hewan: "Monkey", makanan: "Risol manyo", motto: "Ganbatte! Menuju masa depan cerah di Jepang.", foto: "" },
+            { id: 32, nama: "SITI NURASYFA NACHITA PUTRI", panggilan: "Chita", gender: "Perempuan", hobi: "Menggambar", cita: "Desainer busana", hewan: "Tidak ada", makanan: "Random", motto: "Mendesain mimpi menjadi kenyataan.", foto: "" },
+            { id: 33, nama: "SYASYA DIANTI HUSODO", panggilan: "Syasya", gender: "Perempuan", hobi: "Random", cita: "Random", hewan: "Kucing", makanan: "Lele goreng", motto: "Selalu ceria dan penuh energi positif.", foto: "" },
+            { id: 34, nama: "PAHIRAH AULIA RAMADANI", panggilan: "Pahira", gender: "Perempuan", hobi: "Random", cita: "Random", hewan: "Rubah merah", makanan: "Cheese cake", motto: "Manis dan ceria di setiap langkah.", foto: "" },
+            { id: 35, nama: "YUSUF PUTRA ABDILLAH SYUKRO", panggilan: "Yusuf", gender: "Laki-laki", hobi: "Mengaji", cita: "Investor", hewan: "Ayam", makanan: "Mie ayam", motto: "Ilmu dan akhlak adalah investasi terbaik.", foto: "" },
+            { id: 36, nama: "MAVI MARMARA", panggilan: "Mavi", gender: "Laki-laki", hobi: "Olahraga", cita: "Arsitek", hewan: "Kucing", makanan: "Nasgor", motto: "Membangun masa depan yang kokoh dan solid.", foto: "" },
+            { id: 37, nama: "SANDIKA AMOS MANIK", panggilan: "Sandyka", gender: "Laki-laki", hobi: "Running", cita: "Atlet", hewan: "Singa", makanan: "Random", motto: "Berlari kencang tanpa pernah menoleh ke belakang.", foto: "" },
+            { id: 38, nama: "NABILLA", panggilan: "Nabilla", gender: "Perempuan", hobi: "Olahraga", cita: "Pt preeport", hewan: "Kelinci", makanan: "Dimsum mentai", motto: "Sehat, kuat, dan siap meraih sukses!", foto: "" }
+        ];
+
+        // GENDER-MATCHED CUTE ILLUSTRATED AVATAR GENERATOR
+        function getStudentAvatar(student) {
+            if (student.foto && student.foto.trim() !== '') {
+                return student.foto;
+            }
+            const seed = encodeURIComponent(student.nama);
+            if (student.gender === 'Laki-laki') {
+                // Boyish cute short hair & pastel cool background
+                return `https://api.dicebear.com/7.x/adventurer/svg?seed=${seed}&hair=short01,short02,short03,short04,short05,short06,short07,short08,short09,short10&backgroundColor=dbeafe,e0e7ff,d1fae5`;
+            } else {
+                // Girly cute long/styled hair & pastel pink/lavender background
+                return `https://api.dicebear.com/7.x/adventurer/svg?seed=${seed}&hair=long01,long02,long03,long04,long05,long06,long07,long08,long09,long10,long11,long12&backgroundColor=ffd5e5,ffe4e6,f3e8ff`;
+            }
+        }
+
+        // PERSISTENT STATE
+        let homeData = JSON.parse(localStorage.getItem('xdkv2_home_v2')) || defaultHomeData;
+        let structureData = JSON.parse(localStorage.getItem('xdkv2_structure_v2')) || defaultStructureData;
+        let aboutItems = JSON.parse(localStorage.getItem('xdkv2_about_items_v2')) || defaultAboutItems;
+        let aboutMeta = JSON.parse(localStorage.getItem('xdkv2_about_meta_v2')) || defaultAboutMeta;
+        let kasData = JSON.parse(localStorage.getItem('xdkv2_kas_v2')) || defaultKasData;
+        let students = JSON.parse(localStorage.getItem('xdkv2_students_v2')) || defaultStudentsData;
+        let isAdmin = localStorage.getItem('xdkv2_is_admin') === 'true';
+        let adminEmails = JSON.parse(localStorage.getItem('xdkv2_admin_emails')) || [];
+        let activeAdmin = localStorage.getItem('xdkv2_active_admin') || '';
+        let currentFilter = 'ALL';
+
+        // INITIALIZE APP
+        document.addEventListener('DOMContentLoaded', () => {
+            renderHome();
+            renderStructure();
+            renderAbout();
+            renderKas();
+            applyFilters();
+            checkAdminStatus();
+            setupListeners();
+        });
+        // RENDER BERANDA
+        function renderHome() {
+            document.getElementById('heroRibbonDisplay').textContent = homeData.ribbon;
+            document.getElementById('heroTitleDisplay').textContent = homeData.title;
+            document.getElementById('heroSubtitleDisplay').textContent = homeData.subtitle;
+            document.getElementById('heroMottoDisplay').textContent = homeData.motto;
+            document.getElementById('heroCreditsDisplay').innerHTML = `🎀 Created with love by <strong>${homeData.credits}</strong> 🎀`;
+            document.getElementById('homeStudentCountSub').textContent = `${students.length} Siswa DKV 2`;
+        }
+
+        function openEditHomeModal() {
+            document.getElementById('homeRibbonInput').value = homeData.ribbon;
+            document.getElementById('homeTitleInput').value = homeData.title;
+            document.getElementById('homeSubtitleInput').value = homeData.subtitle;
+            document.getElementById('homeMottoInput').value = homeData.motto;
+            document.getElementById('homeCreditsInput').value = homeData.credits;
+            document.getElementById('editHomeModal').style.display = 'flex';
+        }
+
+        document.getElementById('editHomeForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            homeData = {
+                ribbon: document.getElementById('homeRibbonInput').value.trim(),
+                title: document.getElementById('homeTitleInput').value.trim(),
+                subtitle: document.getElementById('homeSubtitleInput').value.trim(),
+                motto: document.getElementById('homeMottoInput').value.trim(),
+                credits: document.getElementById('homeCreditsInput').value.trim()
+            };
+            localStorage.setItem('xdkv2_home_v2', JSON.stringify(homeData));
+            renderHome();
+            closeAllModals();
+            showToast('🎀 Beranda berhasil diperbarui!');
+        });
+
+        // RENDER STRUKTUR KELAS
+        function renderStructure() {
+            const container = document.getElementById('structureListContainer');
+            container.innerHTML = '';
+
+            structureData.forEach((item, idx) => {
+                const card = document.createElement('div');
+                card.className = `coquette-list-card ${item.featured ? 'featured' : ''}`;
+                card.style.animationDelay = `${Math.min(idx * 0.03, 0.3)}s`;
+                card.innerHTML = `
+                    <div style="display:flex; justify-content:space-between; align-items:center; gap:10px;">
+                        <div>
+                            <span class="role-label">${item.role}</span>
+                            <div class="person-name">${item.name}</div>
+                        </div>
+                        ${isAdmin ? `
+                            <div style="display:flex; gap:5px; flex-shrink:0;">
+                                <button class="tool-btn tool-edit pop-btn" onclick="openEditStructureModal(${item.id})"><i class="fa-solid fa-pen"></i></button>
+                                <button class="tool-btn tool-del pop-btn" onclick="deleteStructure(${item.id})"><i class="fa-solid fa-trash"></i></button>
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function openAddStructureModal() {
+            document.getElementById('structModalTitle').textContent = '👑 Tambah Jabatan Struktur';
+            document.getElementById('editStructId').value = '';
+            document.getElementById('editStructureForm').reset();
+            document.getElementById('editStructureModal').style.display = 'flex';
+        }
+
+        function openEditStructureModal(id) {
+            const item = structureData.find(s => s.id === id);
+            if (!item) return;
+            document.getElementById('structModalTitle').textContent = '👑 Edit Struktur Kelas';
+            document.getElementById('editStructId').value = item.id;
+            document.getElementById('structRoleInput').value = item.role;
+            document.getElementById('structNameInput').value = item.name;
+            document.getElementById('structFeaturedInput').value = item.featured ? 'true' : 'false';
+            document.getElementById('editStructureModal').style.display = 'flex';
+        }
+
+        document.getElementById('editStructureForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const idVal = document.getElementById('editStructId').value;
+            const payload = {
+                role: document.getElementById('structRoleInput').value.trim(),
+                name: document.getElementById('structNameInput').value.trim(),
+                featured: document.getElementById('structFeaturedInput').value === 'true'
+            };
+
+            if (idVal) {
+                const idx = structureData.findIndex(s => s.id === parseInt(idVal));
+                if (idx !== -1) structureData[idx] = { ...structureData[idx], ...payload };
+            } else {
+                const newId = structureData.length ? Math.max(...structureData.map(s => s.id)) + 1 : 1;
+                structureData.push({ id: newId, ...payload });
+            }
+
+            localStorage.setItem('xdkv2_structure_v2', JSON.stringify(structureData));
+            renderStructure();
+            closeAllModals();
+            showToast('👑 Struktur kelas tersimpan!');
+        });
+
+        function deleteStructure(id) {
+            structureData = structureData.filter(s => s.id !== id);
+            localStorage.setItem('xdkv2_structure_v2', JSON.stringify(structureData));
+            renderStructure();
+            showToast('🗑️ Jabatan dihapus');
+        }
+
+        // RENDER TENTANG KELAS
+        function renderAbout() {
+            const container = document.getElementById('aboutListContainer');
+            container.innerHTML = '';
+
+            aboutItems.forEach(item => {
+                const row = document.createElement('div');
+                row.className = 'info-row';
+                row.style.alignItems = 'center';
+                row.innerHTML = `
+                    <strong>${item.label}</strong>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <span>${item.value}</span>
+                        ${isAdmin ? `
+                            <button class="tool-btn tool-edit pop-btn" style="padding:3px 7px;" onclick="openEditAboutModal(${item.id})"><i class="fa-solid fa-pen"></i></button>
+                            <button class="tool-btn tool-del pop-btn" style="padding:3px 7px;" onclick="deleteAboutItem(${item.id})"><i class="fa-solid fa-trash"></i></button>
+                        ` : ''}
+                    </div>
+                `;
+                container.appendChild(row);
+            });
+
+            document.getElementById('aboutMottoDisplay').textContent = aboutMeta.motto;
+            document.getElementById('aboutCharDisplay').textContent = aboutMeta.characteristic;
+        }
+
+        function openAddAboutModal() {
+            document.getElementById('aboutModalTitle').textContent = '💌 Tambah Baris Info Kelas';
+            document.getElementById('editAboutId').value = '';
+            document.getElementById('editAboutForm').reset();
+            document.getElementById('editAboutModal').style.display = 'flex';
+        }
+
+        function openEditAboutModal(id) {
+            const item = aboutItems.find(a => a.id === id);
+            if (!item) return;
+            document.getElementById('aboutModalTitle').textContent = '💌 Edit Info Kelas';
+            document.getElementById('editAboutId').value = item.id;
+            document.getElementById('aboutLabelInput').value = item.label;
+            document.getElementById('aboutValueInput').value = item.value;
+            document.getElementById('editAboutModal').style.display = 'flex';
+        }
+
+        document.getElementById('editAboutForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const idVal = document.getElementById('editAboutId').value;
+            const payload = {
+                label: document.getElementById('aboutLabelInput').value.trim(),
+                value: document.getElementById('aboutValueInput').value.trim()
+            };
+
+            if (idVal) {
+                const idx = aboutItems.findIndex(a => a.id === parseInt(idVal));
+                if (idx !== -1) aboutItems[idx] = { ...aboutItems[idx], ...payload };
+            } else {
+                const newId = aboutItems.length ? Math.max(...aboutItems.map(a => a.id)) + 1 : 1;
+                aboutItems.push({ id: newId, ...payload });
+            }
+
+            localStorage.setItem('xdkv2_about_items_v2', JSON.stringify(aboutItems));
+            renderAbout();
+            closeAllModals();
+            showToast('💌 Info kelas tersimpan!');
+        });
+
+        function deleteAboutItem(id) {
+            aboutItems = aboutItems.filter(a => a.id !== id);
+            localStorage.setItem('xdkv2_about_items_v2', JSON.stringify(aboutItems));
+            renderAbout();
+            showToast('🗑️ Baris info dihapus');
+        }
+
+        function openEditAboutMetaModal() {
+            document.getElementById('aboutMottoInput').value = aboutMeta.motto;
+            document.getElementById('aboutCharInput').value = aboutMeta.characteristic;
+            document.getElementById('editAboutMetaModal').style.display = 'flex';
+        }
+
+        document.getElementById('editAboutMetaForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            aboutMeta = {
+                motto: document.getElementById('aboutMottoInput').value.trim(),
+                characteristic: document.getElementById('aboutCharInput').value.trim()
+            };
+            localStorage.setItem('xdkv2_about_meta_v2', JSON.stringify(aboutMeta));
+            renderAbout();
+            closeAllModals();
+            showToast('🎀 Motto & karakteristik tersimpan!');
+        });
+
+        // RENDER LAPORAN KAS
+        function renderKas() {
+            const container = document.getElementById('kasListContainer');
+            container.innerHTML = '';
+
+            kasData.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'kas-card';
+                card.innerHTML = `
+                    <div class="kas-header">
+                        <span class="kas-month">${item.month}</span>
+                        <span class="saldo-pill ${item.status === 'neg' ? 'saldo-neg' : 'saldo-pos'}">${item.balanceText}</span>
+                    </div>
+                    <div class="info-row"><span>${item.incomeLabel}</span><strong>${item.incomeVal}</strong></div>
+                    <div class="info-row"><span>Total Pengeluaran</span><strong>${item.expenseVal}</strong></div>
+                    ${isAdmin ? `
+                        <div style="display:flex; justify-content:flex-end; gap:6px; margin-top:10px; padding-top:8px; border-top:1px dashed var(--border-lace);">
+                            <button class="tool-btn tool-edit pop-btn" onclick="openEditKasModal(${item.id})"><i class="fa-solid fa-pen"></i> Edit Bulan</button>
+                            <button class="tool-btn tool-del pop-btn" onclick="deleteKas(${item.id})"><i class="fa-solid fa-trash"></i> Hapus</button>
+                        </div>
+                    ` : ''}
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function openAddKasModal() {
+            document.getElementById('kasModalTitle').textContent = '👛 Tambah Laporan Kas Bulan';
+            document.getElementById('editKasId').value = '';
+            document.getElementById('editKasForm').reset();
+            document.getElementById('kasIncomeLabelInput').value = 'Total Pemasukan';
+            document.getElementById('editKasModal').style.display = 'flex';
+        }
+
+        function openEditKasModal(id) {
+            const item = kasData.find(k => k.id === id);
+            if (!item) return;
+            document.getElementById('kasModalTitle').textContent = '👛 Edit Laporan Kas';
+            document.getElementById('editKasId').value = item.id;
+            document.getElementById('kasMonthInput').value = item.month;
+            document.getElementById('kasIncomeLabelInput').value = item.incomeLabel;
+            document.getElementById('kasIncomeValInput').value = item.incomeVal;
+            document.getElementById('kasExpenseValInput').value = item.expenseVal;
+            document.getElementById('kasBalanceTextInput').value = item.balanceText;
+            document.getElementById('kasStatusInput').value = item.status;
+            document.getElementById('editKasModal').style.display = 'flex';
+        }
+
+        document.getElementById('editKasForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const idVal = document.getElementById('editKasId').value;
+            const payload = {
+                month: document.getElementById('kasMonthInput').value.trim(),
+                incomeLabel: document.getElementById('kasIncomeLabelInput').value.trim(),
+                incomeVal: document.getElementById('kasIncomeValInput').value.trim(),
+                expenseVal: document.getElementById('kasExpenseValInput').value.trim(),
+                balanceText: document.getElementById('kasBalanceTextInput').value.trim(),
+                status: document.getElementById('kasStatusInput').value
+            };
+
+            if (idVal) {
+                const idx = kasData.findIndex(k => k.id === parseInt(idVal));
+                if (idx !== -1) kasData[idx] = { ...kasData[idx], ...payload };
+            } else {
+                const newId = kasData.length ? Math.max(...kasData.map(k => k.id)) + 1 : 1;
+                kasData.push({ id: newId, ...payload });
+            }
+
+            localStorage.setItem('xdkv2_kas_v2', JSON.stringify(kasData));
+            renderKas();
+            closeAllModals();
+            showToast('👛 Laporan kas tersimpan!');
+        });
+
+        function deleteKas(id) {
+            kasData = kasData.filter(k => k.id !== id);
+            localStorage.setItem('xdkv2_kas_v2', JSON.stringify(kasData));
+            renderKas();
+            showToast('🗑️ Laporan bulan dihapus');
+        }
+
+        // SEARCH & FILTER
+        // ADMIN SYSTEM (GLOBAL ACROSS ALL 5 SECTIONS)
+        function checkAdminStatus() {
+            const bars = [
+                document.getElementById('homeAdminBar'),
+                document.getElementById('adminStatusBar'),
+                document.getElementById('structureAdminBar'),
+                document.getElementById('aboutAdminBar'),
+                document.getElementById('kasAdminBar')
+            ];
+            const labels = document.querySelectorAll('.activeAdminLabel');
+            const adminBtn = document.getElementById('adminBtn');
+            const loginForm = document.getElementById('adminLoginForm');
+            const activeControls = document.getElementById('adminActiveControls');
+            const modalSubtitle = document.getElementById('adminModalSubtitle');
+
+            if (isAdmin) {
+                bars.forEach(b => { if (b) b.style.display = 'flex'; });
+                labels.forEach(l => l.innerHTML = `👑 ${activeAdmin}`);
+                adminBtn.innerHTML = `<i class="fa-solid fa-crown"></i> Admin On`;
+                loginForm.style.display = 'none';
+                activeControls.style.display = 'block';
+                document.getElementById('panelActiveEmail').textContent = activeAdmin;
+                modalSubtitle.textContent = 'Mode Admin aktif di seluruh menu: Beranda, Anggota, Struktur, Tentang, & Kas.';
+            } else {
+                bars.forEach(b => { if (b) b.style.display = 'none'; });
+                adminBtn.innerHTML = `<i class="fa-solid fa-wand-magic-sparkles"></i> Admin`;
+                loginForm.style.display = 'block';
+                activeControls.style.display = 'none';
+                modalSubtitle.textContent = 'Masukkan email admin dan kode akses untuk mengelola seluruh isi website.';
+            }
+            renderSavedAdmins();
+            renderHome();
+            renderStructure();
+            renderAbout();
+            renderKas();
+            applyFilters();
+        }
+
+        function renderSavedAdmins() {
+            const box = document.getElementById('savedAdminsList');
+            if (adminEmails.length > 0) {
+                box.innerHTML = `<strong>Riwayat Email Admin:</strong><br>${adminEmails.join(' • ')}`;
+            } else {
+                box.innerHTML = '';
+            }
+        }
+
+        document.getElementById('adminBtn').addEventListener('click', () => {
+            renderSavedAdmins();
+            document.getElementById('adminLoginModal').style.display = 'flex';
+        });
+
+        document.getElementById('adminLoginForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('adminEmailInput').value.trim();
+            const pass = document.getElementById('adminPasswordInput').value;
+
+            if (pass === '314159') {
+                isAdmin = true;
+                activeAdmin = email;
+                if (!adminEmails.includes(email)) adminEmails.push(email);
+
+                localStorage.setItem('xdkv2_is_admin', 'true');
+                localStorage.setItem('xdkv2_active_admin', email);
+                localStorage.setItem('xdkv2_admin_emails', JSON.stringify(adminEmails));
+
+                closeAllModals();
+                checkAdminStatus();
+                showToast('👑 Mode Admin aktif di semua halaman!');
+            } else {
+                showToast('❌ Kode sandi salah!');
+            }
+        });
+
+        function logoutAdmin() {
+            isAdmin = false;
+            activeAdmin = '';
+            localStorage.setItem('xdkv2_is_admin', 'false');
+            localStorage.removeItem('xdkv2_active_admin');
+            checkAdminStatus();
+            showToast('Keluar dari mode Admin');
+        }
+
+        function resetAllDefaultData() {
+            localStorage.removeItem('xdkv2_home_v2');
+            localStorage.removeItem('xdkv2_structure_v2');
+            localStorage.removeItem('xdkv2_about_items_v2');
+            localStorage.removeItem('xdkv2_about_meta_v2');
+            localStorage.removeItem('xdkv2_kas_v2');
+            localStorage.removeItem('xdkv2_students_v2');
+
+            homeData = JSON.parse(JSON.stringify(defaultHomeData));
+            structureData = JSON.parse(JSON.stringify(defaultStructureData));
+            aboutItems = JSON.parse(JSON.stringify(defaultAboutItems));
+            aboutMeta = JSON.parse(JSON.stringify(defaultAboutMeta));
+            kasData = JSON.parse(JSON.stringify(defaultKasData));
+            students = JSON.parse(JSON.stringify(defaultStudentsData));
+
+            checkAdminStatus();
+            closeAllModals();
+            showToast('🔄 Semua data dikembalikan ke awal!');
+        }
+
+        function applyFilters() {
+            const q = document.getElementById('searchInput').value.toLowerCase();
+            const filtered = students.filter(s => {
+                const matchText = s.nama.toLowerCase().includes(q) ||
+                                  (s.panggilan || '').toLowerCase().includes(q) ||
+                                  (s.hobi || '').toLowerCase().includes(q) ||
+                                  (s.cita || '').toLowerCase().includes(q);
+                if (!matchText) return false;
+                if (currentFilter === 'Perempuan') return s.gender === 'Perempuan';
+                if (currentFilter === 'Laki-laki') return s.gender === 'Laki-laki';
+                if (currentFilter === 'GAMBAR') return (s.hobi || '').toLowerCase().includes('gambar');
+                return true;
+            });
+            document.getElementById('studentCountBadge').textContent = `${filtered.length} Siswa 🎀`;
+            renderStudents(filtered);
+        }
+
+        document.getElementById('searchInput').addEventListener('input', applyFilters);
+
+        // RENDER STUDENT CARDS
+        function renderStudents(list) {
+            const grid = document.getElementById('studentsGrid');
+            grid.innerHTML = '';
+
+            if (list.length === 0) {
+                grid.innerHTML = `<p style="grid-column:1/-1; text-align:center; padding:30px 0; color:var(--text-secondary);">Tidak ada siswa yang cocok 🎀</p>`;
+                return;
+            }
+
+            list.forEach((student, idx) => {
+                const avatar = getStudentAvatar(student);
+                const isBoy = student.gender === 'Laki-laki';
+                const card = document.createElement('div');
+                card.className = `student-card pop-btn ${isBoy ? 'boy-card' : 'girl-card'}`;
+                card.style.animationDelay = `${Math.min(idx * 0.03, 0.35)}s`;
+                card.innerHTML = `
+                    <div class="avatar-frame">
+                        <img src="${avatar}" alt="${student.nama}">
+                    </div>
+                    <h3>${student.panggilan || student.nama.split(' ')[0]}</h3>
+                    <p>${student.nama}</p>
+                    <span class="hobby-badge">✨ ${student.hobi || 'Kreatif'}</span>
+                    ${isAdmin ? `
+                        <div class="admin-card-tools">
+                            <button class="tool-btn tool-edit pop-btn" onclick="event.stopPropagation(); openEditModal(${student.id})"><i class="fa-solid fa-pen"></i> Edit</button>
+                            <button class="tool-btn tool-del pop-btn" onclick="event.stopPropagation(); deleteStudent(${student.id})"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    ` : ''}
+                `;
+                card.addEventListener('click', () => openStudentModal(student));
+                grid.appendChild(card);
+            });
+        }
+
+        // BIODATA BOTTOM SHEET MODAL (NO INSTAGRAM)
+        function openStudentModal(s) {
+            const avatar = getStudentAvatar(s);
+            const genderIcon = s.gender === 'Laki-laki' ? '🧸' : '🎀';
+            document.getElementById('modalDetails').innerHTML = `
+                <img class="sheet-avatar" src="${avatar}" alt="${s.nama}">
+                <h2 style="font-family:var(--font-serif); text-align:center; font-size:1.25rem; color:var(--text-primary);">${s.nama}</h2>
+                <p style="text-align:center; color:var(--accent-deep); font-weight:700; font-size:0.88rem;">${genderIcon} Panggilan: "${s.panggilan || '-'}"</p>
+                
+                <div class="bio-detail-box">
+                    <div class="bio-item"><strong>Jenis Kelamin</strong><span>${s.gender}</span></div>
+                    <div class="bio-item"><strong>Hobi</strong><span>${s.hobi || '-'}</span></div>
+                    <div class="bio-item"><strong>Cita-cita</strong><span>${s.cita || '-'}</span></div>
+                    <div class="bio-item"><strong>Hewan Kesukaan</strong><span>${s.hewan || '-'}</span></div>
+                    <div class="bio-item"><strong>Makanan Favorit</strong><span>${s.makanan || '-'}</span></div>
+                </div>
+
+                <div class="motto-ribbon-box">
+                    “${s.motto || 'Semangat berkarya di X DKV 2 SMKN 4 BATAM!'}”
+                </div>
+            `;
+            document.getElementById('studentModal').style.display = 'flex';
+        }
+
+        // ADMIN SYSTEM
+        function checkAdminStatus() {
+            const bar = document.getElementById('adminStatusBar');
+            const label = document.getElementById('activeAdminEmail');
+            const adminBtn = document.getElementById('adminBtn');
+
+            if (isAdmin) {
+                bar.style.display = 'flex';
+                label.innerHTML = `👑 ${activeAdmin}`;
+                adminBtn.innerHTML = `<i class="fa-solid fa-crown"></i> Admin On`;
+            } else {
+                bar.style.display = 'none';
+                adminBtn.innerHTML = `<i class="fa-solid fa-wand-magic-sparkles"></i> Admin`;
+            }
+            renderSavedAdmins();
+            applyFilters();
+        }
+
+        function renderSavedAdmins() {
+            const box = document.getElementById('savedAdminsList');
+            if (adminEmails.length > 0) {
+                box.innerHTML = `<strong>Admin Terdaftar:</strong><br>${adminEmails.join(' • ')}`;
+            } else {
+                box.innerHTML = '';
+            }
+        }
+
+        document.getElementById('adminBtn').addEventListener('click', () => {
+            if (isAdmin) {
+                showToast(`👑 Aktif sebagai ${activeAdmin}`);
+                switchView('studentsView');
+            } else {
+                renderSavedAdmins();
+                document.getElementById('adminLoginModal').style.display = 'flex';
+            }
+        });
+
+        document.getElementById('adminLoginForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('adminEmailInput').value.trim();
+            const pass = document.getElementById('adminPasswordInput').value;
+
+            if (pass === '314159') {
+                isAdmin = true;
+                activeAdmin = email;
+                if (!adminEmails.includes(email)) adminEmails.push(email);
+
+                localStorage.setItem('xdkv2_is_admin', 'true');
+                localStorage.setItem('xdkv2_active_admin', email);
+                localStorage.setItem('xdkv2_admin_emails', JSON.stringify(adminEmails));
+
+                closeAllModals();
+                checkAdminStatus();
+                showToast('🎀 Berhasil masuk mode Admin!');
+            } else {
+                showToast('❌ Kode sandi salah!');
+            }
+        });
+
+        function logoutAdmin() {
+            isAdmin = false;
+            activeAdmin = '';
+            localStorage.setItem('xdkv2_is_admin', 'false');
+            localStorage.removeItem('xdkv2_active_admin');
+            checkAdminStatus();
+            showToast('Keluar dari mode Admin');
+        }
+
+        function openAddStudentModal() {
+            document.getElementById('editModalTitle').textContent = 'Tambah Siswa Baru 🎀';
+            document.getElementById('editStudentId').value = '';
+            document.getElementById('editStudentForm').reset();
+            document.getElementById('editStudentModal').style.display = 'flex';
+        }
+
+        function openEditModal(id) {
+            const s = students.find(item => item.id === id);
+            if (!s) return;
+            document.getElementById('editModalTitle').textContent = 'Edit Biodata Siswa 🎀';
+            document.getElementById('editStudentId').value = s.id;
+            document.getElementById('editNama').value = s.nama;
+            document.getElementById('editPanggilan').value = s.panggilan || '';
+            document.getElementById('editGender').value = s.gender;
+            document.getElementById('editHobi').value = s.hobi || '';
+            document.getElementById('editCita').value = s.cita || '';
+            document.getElementById('editHewan').value = s.hewan || '';
+            document.getElementById('editMakanan').value = s.makanan || '';
+            document.getElementById('editMotto').value = s.motto || '';
+            document.getElementById('editFoto').value = '';
+            document.getElementById('editStudentModal').style.display = 'flex';
+        }
+
+        document.getElementById('editStudentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const idVal = document.getElementById('editStudentId').value;
+            const fileInput = document.getElementById('editFoto');
+
+            const payload = {
+                nama: document.getElementById('editNama').value.trim(),
+                panggilan: document.getElementById('editPanggilan').value.trim(),
+                gender: document.getElementById('editGender').value,
+                hobi: document.getElementById('editHobi').value.trim(),
+                cita: document.getElementById('editCita').value.trim(),
+                hewan: document.getElementById('editHewan').value.trim(),
+                makanan: document.getElementById('editMakanan').value.trim(),
+                motto: document.getElementById('editMotto').value.trim()
+            };
+
+            const finalizeSave = (base64Img) => {
+                if (idVal) {
+                    const idx = students.findIndex(s => s.id === parseInt(idVal));
+                    if (idx !== -1) {
+                        students[idx] = { ...students[idx], ...payload, foto: base64Img !== null ? base64Img : students[idx].foto };
+                    }
+                } else {
+                    const newId = students.length ? Math.max(...students.map(s => s.id)) + 1 : 1;
+                    students.push({ id: newId, ...payload, foto: base64Img || '' });
+                }
+                localStorage.setItem('xdkv2_students_v2', JSON.stringify(students));
+                applyFilters();
+                closeAllModals();
+                showToast('🎀 Biodata & foto tersimpan!');
+            };
+
+            if (fileInput.files && fileInput.files[0]) {
+                const reader = new FileReader();
+                reader.onload = ev => finalizeSave(ev.target.result);
+                reader.readAsDataURL(fileInput.files[0]);
+            } else {
+                finalizeSave(null);
+            }
+        });
+
+        function deleteStudent(id) {
+            students = students.filter(s => s.id !== id);
+            localStorage.setItem('xdkv2_students_v2', JSON.stringify(students));
+            renderHome();
+            applyFilters();
+            showToast('🗑️ Siswa dihapus');
+        }
+
+        function closeAllModals() {
+            document.querySelectorAll('.modal-backdrop').forEach(m => m.style.display = 'none');
+        }
+
+        function setupListeners() {
+            document.querySelectorAll('.modal-backdrop').forEach(backdrop => {
+                backdrop.addEventListener('click', (e) => {
+                    if (e.target === backdrop) closeAllModals();
+                });
+            });
+
+            document.getElementById('themeToggle').addEventListener('click', () => {
+                const current = document.documentElement.getAttribute('data-theme');
+                const next = current === 'dark' ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', next);
+                document.getElementById('themeToggle').innerHTML = next === 'dark'
+                    ? '<i class="fa-solid fa-sun"></i>'
+                    : '<i class="fa-solid fa-moon"></i>';
+                showToast(next === 'dark' ? '🌙 Dark Coquette Mode' : '🎀 Light Coquette Mode');
+            });
+        }
+    </script>
+</body>
+</html>
